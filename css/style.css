@@ -91,12 +91,11 @@ header h1{
     margin: 1rem 0;
     color:#222;
 }
-.form .btn{
+.form input:last-of-type{
     width: 150%;
     color:  #fff;
     background-color:#3897f0;
    border: 1rem solid #3897f0;
-
 
 }
 
