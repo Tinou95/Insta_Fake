@@ -1,5 +1,5 @@
 /* reset css */
-/* pas travailler en px ni em */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 html{
     font-size: 62.5%;
@@ -8,6 +8,7 @@ html{
 body{
     font: 1.6rem 'Montserrat', sans-serif;
     margin: 0;
+    background-color : #fafafa;
 }
 h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
     margin: 0;
@@ -15,7 +16,7 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
     list-style: none;
 }
 a{
-    color: #222;
+
     text-decoration: none;
 }
 *{
@@ -30,30 +31,118 @@ button{
 /* theme css */
 
 
-
-main{
-    height: 85vh;
+header{
+    height: 10vh;
     display: flex;
-    margin: auto;
-
     justify-content: center;
     align-items: center;
 }
-.iphone img{
-    display: block;
-    height: 100%;
+header h1{
+    font-size: 2rem;
+}
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
 }
 
-input{
-    border: .1rem solid red;
+.container_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #222;
+    height: auto;
+    width: 37rem;
+    border: 1px solid #ccc;
+}
+
+.inscrivez_vous{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #222;
+    height: 10vh;
+    width: 37rem;
+    border: 1px solid #ccc;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+.form img{
+    font-size: 3rem;
+    padding:  2rem 0;
+}
+.form .input{
+    width: 150%;
     padding: 1rem;
+    margin: 1rem 0;
+    color:#fafafa;
 }
-input:focus{
-    background-color: red;
-    color: blue;
-    resize: none;
+.form .btn{
+    width: 150%;
+    color:  #fff;
+    background-color:#3897f0;
+   border: 1rem solid #3897f0;
+
+
 }
 
-footer{
-    height: 15vh;
+.form p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
+
+  
+
+
+
+.form a{
+    padding: .5rem 0;
+}
+.form .items_a{
+    padding-top: 2rem;
+}
+
+.autre_methodes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.autre_methodes ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.autre_methodes img{
+    width: 20rem;
+}
+
+
+
+
+@media screen and (max-width: 70rem) {
+
+    .autre_methodes ul{
+        flex-direction: column;
+    
+    }
+    
+}
+
