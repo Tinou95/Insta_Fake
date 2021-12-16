@@ -1,0 +1,59 @@
+/* reset css */
+/* pas travailler en px ni em */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Montserrat', sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+button{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+/* theme css */
+
+
+
+main{
+    height: 85vh;
+    display: flex;
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+}
+.iphone img{
+    display: block;
+    height: 100%;
+}
+
+input{
+    border: .1rem solid red;
+    padding: 1rem;
+}
+input:focus{
+    background-color: red;
+    color: blue;
+    resize: none;
+}
+
+footer{
+    height: 15vh;
+}
