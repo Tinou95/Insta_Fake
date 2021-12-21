@@ -146,6 +146,18 @@ header h1{
     width: 15rem;
 }
 
+.echec{
+    display: block;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    width: 100%;
+}
+.reussi{
+    display: block;
+    color: rgb(0, 129, 0);
+    text-align: center;
+    width: 100%;
+}
 
 
 
