@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const exprEmail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/
   const exprPassword = /^[a-zA-Z0-9._-]{2,15}$/
 
-  const formActive = () => {
+  const functionForm = () => {
     let affiche = document.querySelector(".warnOrSucces")
     let email = document.querySelector("#email")
     let password = document.querySelector("#password")
@@ -19,7 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
           localStorage.setItem("user", email) //stocker le login
           sessionStorage.setItem("user", "sessionid")
           document.location.assign("insta_page.html")
-      } else if (!exprEmail.test(email.value) ) {
+
+      }
+      else if (!exprEmail.test(email.value) ) {
           affiche.classList.add("echec")
           affiche.innerText = "Mail invalide"
           affiche.classList.remove("reussi")
@@ -38,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let button = document.querySelector("#rgstr_btn")
   button.addEventListener("click", (e) => {
     e.preventDefault();
-    formActive();
+    functionForm();
 });
 
 
