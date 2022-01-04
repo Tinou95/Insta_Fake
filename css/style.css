@@ -72,6 +72,9 @@ header h1{
     width: 37rem;
     border: 1px solid #ccc;
 }
+.inscrivez_vous h3{
+    font-size: 1.6rem;   
+}
 
 .form{
     display: flex;
@@ -134,6 +137,9 @@ header h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.autre_methodes h3{
+    font-size: 1.6rem;
 }
 .autre_methodes ul{
     display: flex;

@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
-    let souscrire = localStorage.getItem("user");
+    const souscrire = localStorage.getItem("user");
     
-    let el = document.querySelector(".el")
-    let el2 = document.querySelector(".el2")
+    let element = document.querySelector(".el")
+    let element2 = document.querySelector(".el2")
 
-    el.innerText += ` ${souscrire}`;
-    el.style.color = "green";
-    el2.innerText += ` ${souscrire}`;
+    element.innerHTML += `${souscrire}`;
+    element.style.color = "green";
+    element2.innerHTML += `${souscrire}`;
 
   
 });

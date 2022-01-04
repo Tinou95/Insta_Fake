@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   /* evenement */
-
   
   const exprEmail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/
-  const exprPassword = /^[a-zA-Z0-9._-]{2,15}$/
+  const exprPassword = /^[a-zA-Z0-9._-]{2,20}$/
 
   const functionForm = () => {
     let affiche = document.querySelector(".warnOrSucces")
@@ -16,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
           affiche.classList.add("reussi")
           affiche.classList.remove("echec")
           affiche.innerText = "vous etes logué"
-          localStorage.setItem("user", email) //stocker le login
+          localStorage.setItem("user", password) 
           sessionStorage.setItem("user", "sessionid")
           document.location.assign("insta_page.html")
 
