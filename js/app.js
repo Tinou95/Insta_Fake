@@ -1,21 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* evenement */
-  
+
   const exprEmail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/
   const exprPassword = /^[a-zA-Z0-9._-]{2,20}$/
 
   const functionForm = () => {
+
+    
+
+
     let affiche = document.querySelector(".warnOrSucces")
     let email = document.querySelector("#email")
+    let emaill = " votremail@gmail.com"
     let password = document.querySelector("#password")
  
   
       if (exprEmail.test(email.value) && exprPassword.test(password.value)) {
           affiche.classList.add("reussi")
           affiche.classList.remove("echec")
-          affiche.innerText = "vous etes logué"
-          localStorage.setItem("user", password) 
+          affiche.innerText = "Connection réussie"
+          localStorage.setItem("user", emaill) 
           sessionStorage.setItem("user", "sessionid")
           document.location.assign("insta_page.html")
 
@@ -33,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
           affiche.innerText = "Mail et mot de passe incorrecte"
           affiche.classList.remove("reussi")
       }
+  
   }
 
 
@@ -41,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     functionForm();
 });
-
 
 
 
