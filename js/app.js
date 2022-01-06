@@ -23,6 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
           document.location.assign("insta_page.html")
 
       }
+      else if (!exprPassword.test(password.value) && !exprEmail.test(email.value)){
+        affiche.classList.add("echec")
+        affiche.innerText = "Mail et mot de passe incorrecte"
+        affiche.classList.remove("reussi")
+    }
       else if (!exprEmail.test(email.value) ) {
           affiche.classList.add("echec")
           affiche.innerText = "Mail invalide"
@@ -31,11 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
           affiche.classList.add("echec")
           affiche.innerText = "Mot de passe invalide"
           affiche.classList.remove("reussi")
-      } else {
-          affiche.classList.add("echec")
-          affiche.innerText = "Mail et mot de passe incorrecte"
-          affiche.classList.remove("reussi")
-      }
+      } 
   
   }
 
