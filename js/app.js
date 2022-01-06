@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
           affiche.classList.add("reussi")
           affiche.classList.remove("echec")
           affiche.innerText = "Connection réussie"
-          localStorage.setItem("user", emaill) 
+          localStorage.setItem("user", email.value) 
           sessionStorage.setItem("user", "sessionid")
           document.location.assign("insta_page.html")
 
