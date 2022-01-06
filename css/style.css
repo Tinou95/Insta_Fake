@@ -154,13 +154,16 @@ header h1{
 
 .echec{
     display: block;
-    color: rgb(255, 0, 0);
     text-align: center;
     width: 100%;
+    color: rgb(255, 0, 0);
+   
 }
 .reussi{
     display: block;
-    color: rgb(0, 129, 0);
+    text-align: center;
+    width: 100%;
+    color: rgb(5, 136, 5);
     text-align: center;
     width: 100%;
 }
