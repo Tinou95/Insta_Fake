@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let affiche = document.querySelector(".warnOrSucces")
     let email = document.querySelector("#email")
-    let emaill = " votremail@gmail.com"
     let password = document.querySelector("#password")
  
   
